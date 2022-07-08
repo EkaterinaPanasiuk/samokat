@@ -1,0 +1,783 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css" integrity="sha512-xX2rYBFJSj86W54Fyv1de80DWBq7zYLn2z0I9bIhQG+rxIF6XVJUpdGnsNHWRa6AvP89vtFupEPDP8eZAtu9qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>твой самокат</title>
+</head>
+<body>
+    <div class="info">
+        <div class="wrapper">
+                    <div class="info_links">
+                        <a href="#" class="info__link_item"> твой<b> самокат</b>                           </a>
+                    </div>
+                    <div class="info__icons">
+                        <img  class="icon"src="img/telegram.png" alt="telegram">
+                        <img src="img/facebook.png" class="icon" alt="facebook">
+                        <img src="img/vk.png" class="icon" alt="B контаксте VK в круге icon by Icons8">
+                    </div>
+            </div>
+    </div>
+        <header class="header">
+              <div class="wrapper">
+                <select  class="header__select" name="town" id="townSelect">
+                    <option value="moskow">Гродно</option>
+                    <option value="piter">Скидель</option>
+                    <option value="kazan'">Брест</option>
+                </select>
+                    <nav class="header__nav">
+                        <ul class="header__menu">
+                            <li class="header__menu_item"><a href="#rent" class="header__menu_link"> Аренда</a></li>
+                            <li class="header__menu_item"><a href="#rewiews" class="header__menu_link">Отзывы</a></li>
+                            <li class="header__menu_item"><a href="#aboutCompany" class="header__menu_link">О команде</a></li>
+                            <li class="header__menu_item"><a href="#contacts" class="header__menu_link">Контакты</a></li>
+                            <li class="header__menu_item"><a href="#question" class="header__menu_link">FAQ</a></li>
+                            <li class="header__menu_item"><a href="#" class="header__menu_link popup-open" data="user_cabinet">Личный кабинет</a></li>
+    
+    
+                        </ul>
+                        <div class="header__burger">
+                            <span></span>
+                        </div>
+                    </nav>
+                </div>
+                <div class="popup-fade" id="user_cabinet">
+                        <div class="popup">
+                            <a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>
+                            <h2 class="popup__title">
+                                Вход в личный кабинет
+                            </h2>
+                            <form action="" method="get" class="popup__form">
+                                <input type="text" class="popup__input" placeholder="Ваше имя">
+                                <input type="tel" class="popup__input" placeholder="Ваш номер телефона">
+                                <input type="password" class="popup__input" placeholder="Введите пароль">
+                                <button type="submit" class="popup__btn">Ок</button>
+                            </form>
+                        </div>
+
+                </div>
+        </header>
+        <main class="main">
+            <section class="about">
+                <div class="wrapper">
+                    <h1 class="about__title ">АРЕНДА</h1>
+                    <h2 class="about__subtitle ">ЭЛЕКТРОСАМОКАТА В аренду <br>
+                        ОТ 20 BYN В МЕСЯЦ</h2>
+                    <p class="about__text ">Бесплатно доставим до двери. <br> Без залогов.</p>
+                    <button class="about__button button__color-main popup-open" data="checkout">оформить аренду</button>
+                </div>
+            </section>
+            <section class="whaiIsIt" id="rent">
+                <div class="wrapper">
+                        <div class="whaiIsIt__item">
+                            <h2 class="whaiIsIt__title">
+                                <mark class="black">Аренда</mark></h2> <h5 class="whaiIsIt__subtitle"
+                                > - это новый формат современного владения девайсом!</h5>
+                        </div>
+                        <div class="whaiIsIt__item">
+                            <p class="whaiIsIt__text">
+                                Не нужно покупать и хранить самокат! <br>
+                                Не нужно считать минуты или километры,<br> как в 
+                                стандартных сервисах шеринга
+                            </p>
+                            
+                        </div>
+                        <div class="whaiIsIt__item">
+                            <h5 class="whaiIsIt__title">
+                                <mark>Всего от 2 BYN в день</mark>
+                            </h5>
+                            <h5 class="whaiIsIt__title">
+                            Арендуй - покатаемся!
+                            </h5>
+                        </div>
+                    </div>
+            </section>
+            <section class="howItWork">
+                <div class="wrapper">
+                        <h1 class="howItWork__title"><mark class="black">КАК РАБОТАЕТ </mark> Аренда
+                            НА САМОКАТ</h1>
+                    <div class="howItWork__item ">
+                        <div class="howItWork__item-picture">
+                            <img src="img/scooter.png" alt="scooter">
+                        </div>
+                        <div class="howItWork__item-description">
+                            <h5 class="howItWork__item-title">Оставляешь заявку</h5>
+                                <p class="howItWork__item-text">Это займет 2 минуты.
+                                    Заявка ничего не стоит!</p>
+                        </div>
+                        
+                    </div>
+                    <div class="howItWork__item-arrow"> 
+                    <img src="img/arrow.png" alt="arrow">
+                    </div>
+
+                    <div class="howItWork__item-arrow-left"> 
+                        <img src="img/arrow-left.png" alt="arrow">
+                    </div>
+                    <div class="howItWork__item">
+                        <div class="howItWork__item-picture">
+                            <img src="img/scooter.png" alt="scooter">
+                        </div>
+                        <div class="howItWork__item-description">
+                            <h5 class="howItWork__item-title">Оплачиваешь френду</h5>
+                                <p class="howItWork__item-text">Оплачивать удобно – в личном кабинете приложения</p>
+                        </div>
+                        
+                    </div>
+                  
+                    <div class="howItWork__item">
+                        <div class="howItWork__item-picture">
+                            <img src="img/scooter.png" alt="scooter">
+                        </div>
+                        <div class="howItWork__item-description">
+                            <h5 class="howItWork__item-title">Доставляем самокат</h5>
+                                <p class="howItWork__item-text">Доставим до двери по Гродно и до 3 км от Центра- бесплатно</p>
+                        </div>
+                        
+                    </div>
+                    <div class="howItWork__item-arrow"> 
+                        <img src="img/arrow.png" alt="arrow">
+                    </div>
+                    <div class="howItWork__item ">
+                        <div class="howItWork__item-picture">
+                            <img src="img/scooter.png" alt="scooter">
+                        </div>
+                        <div class="howItWork__item-description">
+                            <h5 class="howItWork__item-title">Kатаешься/
+                                наслаждаешься</h5>
+                                <p class="howItWork__item-text">Об остальном позаботится “Твой самокат”!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="tiredOf">
+                <div class="wrapper">
+                    <div class="wantSubscription__Block">
+                        <div class="wantSubscription__Block-description">
+                            <h5 class="wantSubscription__Block-title">
+                                Надоел или сломался самокат?
+                            </h5>
+                            <p class="wantSubscription__Block-text">
+                                Заберем в любое удобное для тебя время. Отремонтируем или предоставим новый! <br>Так быстро, что тебе не надоест ходить пешком.
+    
+                            </p>
+    
+                        </div>
+                        <div class="wantSubscription__button popup-open" data="checkout">хочу самокат</div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="choiceSamokat">
+                <div class="wrapper">
+                    <h1 class="choiceSamokat__title"><mark>ВЫБЕРИ МОДЕЛЬ,</mark> ДОСТУПНУЮ
+                        Для аренды</h1>
+                        <div class="slider">
+                            <div class="slider__left"><img class="icon" src="img/left-arrow.png" alt="стрелка влево"></div>
+                            <div class="slider_wrapper">
+
+                                <div class="slider-line">
+    
+                                    <div class="card">
+                                        <div class="card__row">
+                                            <div class="card__img_wrapper " >
+                                                <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="card__img">
+                                            </div>
+                                            <div class="card__info">
+                                                <img  class="icon card__zoom popup-open" data="card-1" src="img/zoom.png" alt="увеличить">
+                                            </div>
+                                        </div>
+                                        
+                                            <h2 class="card__title">Самокат 12345</h2>
+                                        <div class="card__text">
+                                            <div class="card__text card__text-left ">
+                                              <p>Аренда на 1 месяц<b>20 BYN в месяц</b></p> 
+                                            </div>
+                                            <div class="card__text card__text-right ">
+                                               <p> Аренда на 1 день <b>2 BYN в месяц</b></p>
+                                            </div>
+                                        </div>
+                                        <div class="card__link" id="defender">
+                                           + Тариф "Защита" за 5 BYN
+                                        </div>
+                                        <div class="card__buttons">
+                                            <div class="card__productDescribe" id="character">
+                                                <p>характеристики</p>
+                                                </div>
+                                            <div class="card__choiceButton popup-open" data="checkout">
+                                                <p>выбери меня</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__row">
+                                            <div class="card__img_wrapper " >
+                                                <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="card__img">
+                                            </div>
+                                            <div class="card__info">
+                                                <img  class="icon card__zoom popup-open" data="card-2" src="img/zoom.png" alt="увеличить">
+                                            </div>
+                                        </div>
+                                        <div class="popup-fade"  id="card-2">
+                                            <div class="popup">
+                                     <a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>       
+                                                <h2 class="popup__title">
+                                                    Самокат 2345
+                                                </h2>
+                                                <div class="popupCard__img-wrapper">
+                                                    <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="popupCard__img">
+                                                </div>
+                                               
+                                            </div>	
+                                        </div>
+                                            <h2 class="card__title">Самокат 2345</h2>
+                                            <div class="card__text">
+                                                <div class="card__text card__text-left ">
+                                                  <p>Аренда на 1 месяц<b>20 BYN в месяц</b></p> 
+                                                </div>
+                                                <div class="card__text card__text-right ">
+                                                   <p> Аренда на 1 день <b>2 BYN в месяц</b></p>
+                                                </div>
+                                            </div>
+                                        <div class="card__link" id="defender">
+                                           + Тариф "Защита" за 5 BYN
+                                        </div>
+                                        <div class="card__buttons">
+                                            <div class="card__productDescribe" id="character">
+                                                <p>характеристики</p>
+                                                </div>
+                                            <div class="card__choiceButton popup-open" data="checkout">
+                                                <p>выбери меня</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card__row">
+                                            <div class="card__img_wrapper " >
+                                                <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="card__img">
+                                            </div>
+                                            <div class="card__info">
+                                                <img  class="icon card__zoom popup-open" data="card-3" src="img/zoom.png" alt="увеличить">
+                                            </div>
+                                        </div>
+                                       
+                                            <h2 class="card__title">Самокат 345</h2>
+                                            <div class="card__text">
+                                                <div class="card__text card__text-left ">
+                                                  <p>Аренда на 1 месяц<b>20 BYN в месяц</b></p> 
+                                                </div>
+                                                <div class="card__text card__text-right ">
+                                                   <p> Аренда на 1 день <b>2 BYN в месяц</b></p>
+                                                </div>
+                                            </div>
+                                        <div class="card__link" id="defender">
+                                           + Тариф "Защита" за 5 BYN
+                                        </div>
+                                        <div class="card__buttons">
+                                            <div class="card__productDescribe" id="character">
+                                                <p>характеристики</p>
+                                                </div>
+                                            <div class="card__choiceButton popup-open" data="checkout">
+                                                <p>выбери меня</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>
+                <div class="slider__right"><img class="icon" src="img/right-arrow.png" alt="dghfdj влево"></div>
+
+            </section>
+            <section class="whyUs">
+                <div class="wrapper">
+                    <div class="wantSubscription__Block">
+                        <div class="wantSubscription__Block-description">
+                            <h5 class="wantSubscription__Block-title">
+                                Зачем покупать?
+                            </h5>
+                            <p class="wantSubscription__Block-text">
+                                Пробуй разные девайсы каждый месяц! Бери на сезон, верни, когда надоест!
+    
+                            </p>
+    
+                        </div>
+                        <div class="wantSubscription__button popup-open" data="checkout">хочу самокат</div>
+                    </div>
+                    <h1 class="whyUs__title">ПОЧЕМУ АРЕНДА
+                        <mark>УДОБНЕЕ </mark>
+                    </h1>
+                    <div class="whyUs__table">
+                        <div class="whyUs__item">
+                            <div class="whyUs__item-row1">
+                                <div class="whyUs__img-wrapper">
+                                   <img class="whyUs__img" src="img/whyUs-1.png" alt="свинья-копилка">
+                                </div>
+                                <h5 class="whyUs__item-title"> Экономия</h5>
+                            </div>
+                            <div class="whyUs__item-row2">
+                                <p class="whyUs__item-text">Тебе не надо оплачивать сразу веееесь срок аренды, считать поминутку, оставлять залог или платить крупную сумму, как при покупке.</p>
+                            </div>
+                        </div>
+                        <div class="whyUs__item">
+                            <div class="whyUs__item-row1">
+                                <div class="whyUs__img-wrapper">
+                                    <img class="whyUs__img" src="img/whyUs-2.png" alt="склад">
+                                </div>
+                                <h5 class="whyUs__item-title"> Хранение</h5>
+                            </div>
+                            <div class="whyUs__item-row2">
+                                <p class="whyUs__item-text">Где и как хранить самокат в не сезон – с подпиской это не проблема. Мы заберем девайс, и он не будет мешаться на балконе или в прихожей.</p>
+                            </div>
+                        </div>
+                        <div class="whyUs__item">
+                            <div class="whyUs__item-row1">
+                                <div class="whyUs__img-wrapper">
+                                    <img class="whyUs__img" src="img/whyUs-3.png" alt="ремонтные инструменты">
+                                </div>
+                                <h5 class="whyUs__item-title"> Ремонт</h5>
+                            </div>
+                            <div class="whyUs__item-row2">
+                                <p class="whyUs__item-text">Не нужно переживать и искать, где обслуживать самокат. Сломается – мы приедем и обменяем на новый. Вот так просто – никаких залогов, никаких забот о ремонте.</p>
+                            </div>
+                        </div>
+                        <div class="whyUs__item">
+                            <div class="whyUs__item-row1">
+                                <div class="whyUs__img-wrapper">
+                                    <img class="whyUs__img" src="img/whyUs-4.png" alt="планета земля">
+                                </div>
+                                <h5 class="whyUs__item-title"> Свобода</h5>
+                            </div>
+                            <div class="whyUs__item-row2">
+                                <p class="whyUs__item-text">Не нужно думать, где оставить или забрать самокат. Можешь взять его с собой на дачу, в офис, в метро. А если надоест пользоваться - заберем сами.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="moreBetter">
+            <div class="wrapper">
+                <div class="wantSubscription__Block">
+                    <div class="wantSubscription__Block-description">
+                        <h5 class="wantSubscription__Block-title">
+                            Не веришь в такие шикарные условия?
+                        </h5>
+                        <p class="wantSubscription__Block-text">
+                            Подпишись и убедись сам!
+                        </p>
+                    </div>
+                    <div class="wantSubscription__button popup-open" data="checkout">хочу самокат</div>
+                </div>
+                
+                    <h1 class="moreBetter__title">АРЕНДА МОЖЕТ БЫТЬ
+                        ЕЩЕ <mark>КРУЧЕ!</mark></h1>
+                        <div class="moreBetter__Block">
+                            <div class="moreBetter__item">
+                                <h5 class="moreBetter__item__title">Друг познается в ЕЗДЕ</h5>
+                                <p class="moreBetter__text">
+                                    Приводи друзей и получай бонусы!
+                                </p>
+                                <p class="moreBetter__text">
+                                   Специальные условия аренды для тебя и твоего друга.
+                                </p>
+                                <p class="moreBetter__text">
+                                    Действует только для друзей НАСТОЯЩИХ друзей)
+                                </p>
+                                <button class="moreBetter__button">у меня есть друг</button>
+                            </div>
+                            <div class="moreBetter__item">
+                                <h5 class="moreBetter__item__title">Самокат как ПОДАРОК</h5>
+                                <p class="moreBetter__text">
+                                    Аренда самоката может стать отличным подарком для близкого человека! Хватит дарить вещи, пора дарить приключения!
+                                </p>
+                                <h5 class="moreBetter__item__title">от 2 BYN</h5>
+                                <button class="moreBetter__button">подрить сертификат</button>
+                            </div>
+                            <div class="moreBetter__item">
+                                <h5 class="moreBetter__item__title">БОЛЬШЕ девайсов</h5>
+                                <p class="moreBetter__text">Кроме самокатов вы можете взять в аренду и  другие девайсы: велосипеды, тренажеры, консоли!</p>
+                                <button class="moreBetter__button">подробнее</button>
+                            </div>
+                </div>
+            </div>
+            </section>
+            <section class="reviews" id="rewiews">
+                <div class="wrapper">
+                    <h1 class="reviews__title">ЧТО ГОВОРЯТ НАШИ <mark>КЛИЕНТЫ</mark></h1>
+                            <div class="reviews__Block">
+                                <div class="reviews__item">
+                                    <h5 class="reviews__title">Alisher U.</h5>
+                                    <p class="reviews__text">
+                                        Доброго дня всем. Взял недавно электровелосипед в компании твой самокат техника огонь очень доволен, заявленные 35 км проезжает при активном использовании удобный сервис всем рекомендую)спасибо ребят)
+                                    </p>
+                                </div>
+                                <div class="reviews__item">
+                                    <h5 class="reviews__title">Анна М.</h5>
+                                    <p class="reviews__text">
+                                        Оч крутой сервис с самыми доступными ценами. Катаюсь
+                                        с середины июля. Взяла самокат
+                                        для поездок на работу и обратно. Привезли всё быстро, замочек
+                                        в подарок. В целом, очень довольна по соотношению цена-качество, жаль, что сезон заканчивается
+                                    </p>
+                                </div>
+                                <div class="reviews__item">
+                                    <h5 class="reviews__title">Марк Г.</h5>
+                                    <p class="reviews__text">
+                                        Отличный сервис!!! И круто все
+по услуге, мне быстро поменяли самокат на другой, потому что
+в первом батарейка села...
+
+А круто тем, что они всегда
+в онлайне в инстею
+                                    </p>
+                                </div>
+                                <div class="reviews__item">
+                                    <h5 class="reviews__title">Гера П.</h5>
+                                    <p class="reviews__text">
+                                        Ставлю большой лайк ребятам
+и электрическим самокатам.
+Как оказалось супер удобно
+и реально таскать даже девочке 50-ти килограмм. А соотношение цена/качество просто топ
+в сравнении с городскими самокатами.
+                                    </p>
+                                </div>
+                    </div>
+                </div>
+            </section>
+            <section class="aboutCompany" id="aboutCompany">
+                <div class="wrapper">
+                    <h1 class="aboutCompany__title">О КОМПАНИИ <mark>«‎ТВОЙ САМОКАТ»</mark> </h1>
+                    <h5 class="aboutCompany__subtitle">
+                        Твой самокат- первый в Гродно сервис аренды твоих любимых девайсов - самокаты, велосипеды, тренажеры и приставки.
+                    </h5>
+                    <p class="aboutCompany__text">
+                        Мы помогаем людям перейти к осознанному потреблению и сократить вред от перепроизводства для окружающей среды без ущерба для кошелька.
+                    </p>
+                    <p class="aboutCompany__text">
+                        Наслаждайся радостью обладания без бремени владения.
+                    </p>
+                    <h5 class="aboutCompany__subtitle">Копи впечатления, а не вещи.
+                    </h5>
+                    <h5 class="aboutCompany__subtitle">
+                        Уже 1 500+ клиентов воспользовались нашим сервисом. Стань одним из них!
+                    </h5>
+                    <button class="aboutCompany__button popup-open" data="checkout">
+                        оформить аренду
+                    </button>
+                </div>
+            </section>
+            <section class="payment">
+                <div class="wrapper">
+                    <h1 class="payment__title"><mark class="black">КАК РАБОТАЕТ ДОСТАВКА</mark>
+                        И ГДЕ ОПЛАТИТЬ ПОДПИСКУ</h1>
+                        <div class="payment__item">
+                            <div class="payment__item-row1">
+                                <img src="img/payment-1.png" class="payment__item-row1-img" alt="оплата деньгами">
+                                <h5 class="payment__item-row1-title">Оплата
+                                </h5>
+                            </div>
+                            <div class="payment__item-row2">
+                                <img  class="item-row2-img" src="img/payment-1-1.png" alt="creditcard">
+                                <p class="payment__item-row2-title"><b>В личном кабинете</b></p>
+                                <p class="payment__item-row2-text"></p>
+                            </div>
+                            </div>
+                            <div class="payment__item">
+                                <div class="payment__item-row1">
+                                    <img src="img/payment-2.png" class="payment__item-row1-img" alt="доставка">
+                                    <h5 class="payment__item-row1-title">
+    Доставка
+                                    </h5>
+                                    
+                                </div>
+                                <div class="payment__item-row2">
+                                    <p class="payment__item-row2-title"><b>Бесплатно</b></p>
+                                    <p class="payment__item-row2-text">В пределах Советской площади и 2км от нее. </p>
+                                    <p class="payment__item-row2-text">При оплате при получении доставка по гюГродно - 5 BYN.</p>
+                                    <p class="payment__item-row2-text"><b>Не хочешь доставку? - Забери сам в нашем офисе!</b></p>
+                                    
+                                </div>
+                                </div>
+                                <div class="payment__item">
+                                    <div class="payment__item-row1">
+                                        <img src="img/payment-3.png" class="payment__item-row1-img" alt="возврат">
+                                        <h5 class="payment__item-row1-title"> Замена и возврат
+                                        </h5>
+                                    </div>
+                                    <div class="payment__item-row2">
+                                        <p class="payment__item-row2-title"><b>Бесплатно</b></p>
+                                        <p class="payment__item-row2-text">В пределах Советской площади и 2км от нее. </p>
+                                          
+                                            <p class="payment__item-row2-text">
+                                               Замена и возврат по г.Гродно осуществляется по фиксированному тарифу -5 BYN .</p>
+                                    </div>
+                                </div>
+                    </div>
+                <div class="wantSubscription__Block">
+                    <div class="wantSubscription__Block-description">
+                        <h5 class="wantSubscription__Block-title">
+                            Есть самовывоз
+                        </h5>
+                        <p class="wantSubscription__Block-text">
+                            Если сомневаешься, то перед оплатой подписки можешь провести тест-драйв самокатов в нашем офисе. Он находится в 7 минутах пешком от метро Павелецкая: <b>1-й Кожевнический пер., д. 6, стр.6</b>
+
+                        </p>
+
+                    </div>
+                    <div class="wantSubscription__button popup-open">выбрать самокат для <br> тест-драйва</div>
+                </div>
+            </section>
+            <section class="question" id="question">
+                <div class="wrapper">
+                    <h1 class="question__title">ВОПРОСЫ И <mark>ОТВЕТЫ</mark></h1>
+                    <ul class="tabs__titleWrapper">
+                        <li><a href="#" data="tab-1"class="tabs__title">подписка</a></li>
+                        <li><a href="#" data="tab-2" class="tabs__title">самокат</a></li>
+                        <li><a href="#" data="tab-3" class="tabs__title">доставка</a></li>
+                        <li><a href="#" data="tab-4" class="tabs__title">возврат</a></li>
+                        <li><a href="#" data="tab-5" class="tabs__title">обслуживание</a></li>
+                        <li><a href="#" data="tab-6" class="tabs__title">прочее</a></li>
+                    </ul>
+                        <div class="tabs__content"id="tab-1">
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Как работает подписка "Мой самокат"</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Вы оформляете подписку на сайте, следуя инструкциям. После этого с вами связывается наш менеджер для подтверждения подписки и согласования деталей доставки электросамоката. В течение 48 часов после оформления подписки курьер доставляет вам электросамокат и оформляет необходимые документы. Подписка начинает действовать с момента получения самоката. Вы пользуетесь самокатом, пока он вам не надоест. Если самокат вам больше не нужен - вы можете отменить подписку, и наш курьер заберет у вас самокат.
+                            </p></div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Какие документы необходимы для оформления?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Чтобы оформить подписку, вам необходимо пройти регистрацию на нашем сайте. Для этого потребуются ваши личные данные, такие как ФИО, номер мобильного телефона, email и карта, которой вы будете оплачивать подписку (сразу или при получении). При непосредственном получении тренажера в акт передачи необходимо будет внести ваши паспортные данные, поэтому при встрече с курьером обязательно иметь при себе паспорт. Курьеру также необходимо будет сфотографировать ваш паспорт.
+                            </p></div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Я иностранный гражданин. Могу ли я оформить подписку?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Да, вы можете оформить подписку. Для этого потребуется ваш паспорт и документ о регистрации , действительный в течение следующих трех месяцев.
+                            </p></div>
+                        </div>
+                        <div class="tabs__content"id="tab-2">
+                        <div class="tabs__content__item">
+                            <div class="tabs__content__item-row1">
+                                <h5 class="tabs__content-title">Должен ли я оставлять самокат на специально предусмотренных для этого станциях?</h5>
+                                <span class="tabs__content-button"></span>
+                            </div>
+                            <p class="tabs__content-text">Нет, в этом нет никакой необходимости. Это ваш самокат, и вы можете оставлять его где угодно, позаботившись о необходимых мерах безопасности и убедившись, что он не мешает движению пешеходов и автомобилистов. Между тем, мы рекомендуем парковать самокат на велостоянках и обязательно использовать замок, который входит в стоимость подписки. В целях безопасности не оставляйте самокат без присмотра на длительное время особенно в ночное время суток.
+                        </p>
+                        </div>
+                  
+                    <div class="tabs__content__item">
+                        <div class="tabs__content__item-row1">
+                            <h5 class="tabs__content-title">Что делать если самокат украли?</h5>
+                            <span class="tabs__content-button"></span>
+                        </div>
+                        <p class="tabs__content-text">Мы настоятельно просим относиться к электросамокату, как к вашему собственному, и принимать все необходимые меры безопасности. В случае кражи самоката мы взимаем с вас его стоимость, указанную в акте передачи, и рекомендуем вам обратиться в полицию.
+                    </p>
+                    </div>
+                        </div>
+                        <div class="tabs__content"id="tab-3">
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Могу ли я забрать и вернуть самокат сам?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">МДа, вы можете забрать и вернуть самокат самостоятельно в наш офис по адресу Советская площадь 1, заранее согласовав время с оператором.
+                            </p>
+                            </div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Как быстро мне доставляет самокат?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">После оформления подписки вы получите ваш самокат в течение 48 часов.
+                            </p>
+                            </div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Сколько стоит доставка самоката?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">
+                                    
+                                    Бесплатно в пределах Советской площади и 2км от нее. 
+                                    При оплате при получении доставка по гюГродно - 5 BYN.</p>
+                            </div>
+    
+                        </div>
+                        <div class="tabs__content"id="tab-4">
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Могу ли я вернуть самокат раньше, до окончания подписки?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Вы можете вернуть самокат в любой день до окончания подписки. Однако сумма за неиспользованные дни оплаченной подписки не возвращается.
+                            </p>
+                            </div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Как проходит процедура возврата самоката?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">По прекращении срока подписки с вами свяжется наш оператор для согласования места и времени забора самоката. После этого к вам приедет наш курьер, который оценит состояние самоката, сделает его фотографии или видео и занесет необходимую информацию о самокате в акт приема. Вы также можете вернуть самокат самостоятельно в наш офис.
+                            </p>
+                            </div>
+    
+                        </div>
+                        <div class="tabs__content"id="tab-5">
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Если самокат вышел из строя, как устанавливается, есть ли в этом вина пользователя?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Для определения причин возникновения видимых повреждений и выявления скрытых повреждений производится техническая экспертиза самоката. Более подробно с этим вопросом можно ознакомится в договоре на использование сервиса.
+                            </p>
+                            </div>
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">У меня сломался самокат, что делать?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">У меня сломался самокат, что делать?
+                                    В случае поломки самоката немедленно прекратите его использование и свяжитесь с нами для согласования времени и места замены самоката на новый.
+                            </p>
+                            </div>
+    
+                        </div>
+                        <div class="tabs__content"id="tab-6">
+                            <div class="tabs__content__item">
+                                <div class="tabs__content__item-row1">
+                                    <h5 class="tabs__content-title">Как происходит оплата?</h5>
+                                    <span class="tabs__content-button"></span>
+                                </div>
+                                <p class="tabs__content-text">Оплатить подписку можно сразу или при получении самоката по карте из личного кабинета. Ссылка на оплату будет доступна после прохождения регистрации на сайте.
+                            </p>
+                            </div>
+    
+                        </div>
+                    </div>
+            </section>
+<section class="map" id="contacts">
+    <div class="wrapper">
+        
+        <iframe class="map_item" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2167.185728157512!2d23.831105653206553!3d53.67669481720793!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dfd62f39272b43%3A0x9f1b541d75b1ac42!2zMSwg0JPRgNC-0LTQvdC-!5e0!3m2!1sru!2sby!4v1656063626617!5m2!1sru!2sby" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+</section>
+<div class="arrow__top">
+    <img src="img/right-arrow.png" alt="" class="icon">
+</div>
+
+
+<div class="popup-fade"  id="card-1">
+    <div class="popup">
+        <a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>
+        <h2 class="popup__title">
+            Самокат 12345
+        </h2>
+        <div class="popupCard__img-wrapper">
+            <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="popupCard__img">
+        </div>
+       
+    </div>	
+</div>
+<div class="popup-fade"  id="card-2">
+    <div class="popup">
+<a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>       
+        <h2 class="popup__title">
+            Самокат 2345
+        </h2>
+        <div class="popupCard__img-wrapper">
+            <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="popupCard__img">
+        </div>
+       
+    </div>	
+</div>
+<div class="popup-fade"  id="card-3">
+    <div class="popup">
+        <a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>
+        <h2 class="popup__title">
+            Самокат 345
+        </h2>
+        <div class="popupCard__img-wrapper">
+            <img src="img/card-img-1.png" alt="сaмoкат-крутокат" class="popupCard__img">
+        </div>
+       
+    </div>	
+</div>
+
+<div class="popup-fade" id="checkout">
+	<div class="popup">
+		<a class="popup-close" href="#"><img src="img/close.png" class="icon" alt="закрыть"></a>
+		<h2 class="popup__title">
+            Оформить подписку
+        </h2>
+        <div class="popup__body">
+            <form action="" method="get" class="popup__form">
+                <input type="text" class="popup__input" placeholder="Ваше имя">
+                <input type="tel" class="popup__input" placeholder="Ваш номер телефона">
+                <label for="device">Девайсы</label>
+                <select name="device" id="popup__device">
+                    <option value="Kick-scooter-1">Cамокат-крутокат</option>
+                    <option value="Kick-scooter-2">Самокат-прямокат</option>
+                    <option value="Kick-scooter-3">Самокат 123</option>
+                    <option value="Kick-scooter-4">Самокат-недокат</option>
+                </select>
+                <label for="delivery">Способ получения</label>
+                <select name="delivery" id="popup__delivery">
+                    <option value="pickup">Самовывоз(бесплатно)</option>
+                    <option value="courier">Курьер (5 BYN)</option>
+                </select>
+                <label for="promo">Введите промокод</label>
+                <input type="text" name="promo" class="popup__input">
+                <label for="connection">Удобный способ связи</label>
+                <select name="connection" id="popup__connection">
+                    <option value="viber">Viber</option>
+                    <option value="watsUp">WatsUp</option>
+                </select>
+                <button type="submit" class="popup__btn">Оформить</button>
+            </form>
+        </div>
+	</div>		
+        </main>
+        <footer class="footer">
+            <div class="wrapper">
+                <div class="footer__copyright">
+                    <h5 class="footer__copyright-title">Выражаем благодарность за сопутствующие материалы:</h5>
+                    <a class="footer__copyright-item"href="https://www.flaticon.com/free-icons/close" title="close icons">Close icons created by Ilham Fitrotul Hayat - Flaticon</a>
+                     <a class="footer__copyright-item"href='https://ru.freepik.com/photos/people'><p>People фото создан(а) senivpetro - ru.freepik.com</p></a>
+                     <a class="footer__copyright-item"href='https://www.freepng.ru/'><p>freepng.ru</p><a>
+                        <a class="footer__copyright-item"target="_blank" href="https://icons8.com/icon/60454/vk-в-круге">VK в круге</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+                        <a class="footer__copyright-item"href="https://www.flaticon.com/free-icons/facebook" title="facebook icons">Facebook icons created by Freepik - Flaticon</a>
+                        <a class="footer__copyright-item" href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by SANB - Flaticon</a>
+                        <a class="footer__copyright-item" href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by SANB - Flaticon</a>
+                        <a  class="footer__copyright-item"  href="https://www.flaticon.com/free-icons/arrow" title="arrow icons">Arrow icons created by Creatype - Flaticon</a>
+                        <a class="footer__copyright-item" href="https://www.flaticon.com/free-icons/ui" title="ui icons">Ui icons created by WR Graphic Garage - Flaticon</a><a class="footer__copyright-item" href="https://www.flaticon.com/free-icons/telegram" title="telegram icons">Telegram icons created by Pixel perfect - Flaticon</a>
+                </div>
+                <div class="footer__contacts">
+                    <h5 class="footer__email-title">Для связи:</h5>
+                    <div class="footer__email">
+                        <a class="footer__email-item"> <p>ekaterinapanasiuk29@gmail.com</p></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+</div>
+    </div>
+    <script src="script/main.js"></script>
+
+</body>
+</html>
+<!--
+    <a href='https://ru.freepik.com/photos/people'>People фото создан(а) senivpetro - ru.freepik.com</a>
+-->
